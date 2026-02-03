@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sampriti Botanicals - Premium herbal teas from the mystical forest. Discover our Celtic-inspired collection of organic herbal blends.">
+    <meta name="keywords" content="herbal tea, organic tea, botanical tea, Celtic tea, forest tea, premium tea">
+    <title>Sampriti Botanicals | Mystical Herbal Teas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Sampriti Botanicals</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Collection</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Ancient Wisdom • Modern Wellness</p>
+            <h1>Sampriti Botanicals</h1>
+            <p class="hero-description">
+                Journey through mystical forests and discover the sacred art of herbal tea. 
+                Each blend is a ritual, a connection to nature's ancient healing powers, 
+                crafted with reverence and timeless Celtic traditions.
+            </p>
+            <a href="#products" class="cta-button">Explore Our Collection</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Sacred Tea Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="product-druid-brew.jpg" alt="Druid's Brew Tea" class="product-image" id="product-1">
+                    <h3 class="product-name">Druid's Brew</h3>
+                    <p class="product-description">
+                        A mystical blend of chamomile, elderflower, and sacred herbs. 
+                        Designed to calm the spirit and connect you with ancient forest wisdom. 
+                        Perfect for evening rituals and meditation.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <img src="product-moonlight-blend.jpg" alt="Moonlight Blend Tea" class="product-image" id="product-2">
+                    <h3 class="product-name">Moonlight Blend</h3>
+                    <p class="product-description">
+                        Inspired by Celtic moon ceremonies, this ethereal mix of lavender, 
+                        mint, and silver needle tea awakens intuition and brings tranquility. 
+                        Best enjoyed under starlight.
+                    </p>
+                </div>
+
+                <div class="product-card">
+                    <img src="product-forest-elixir.jpg" alt="Forest Elixir Tea" class="product-image" id="product-3">
+                    <h3 class="product-name">Forest Elixir</h3>
+                    <p class="product-description">
+                        A revitalizing potion of green tea, pine needles, and wild berries. 
+                        Channels the energy of ancient groves and awakens your inner vitality. 
+                        An invigorating morning companion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>The Sacred Path</h2>
+            <div class="about-content">
+                <img src="about-image.jpg" alt="Sampriti Botanicals Story" class="about-image" id="about-img">
+                <div class="about-text">
+                    <p>
+                        <strong>Sampriti Botanicals</strong> was born from a deep reverence for nature's 
+                        ancient healing wisdom. In the heart of mystical forests, where Celtic traditions 
+                        whisper through the trees, we discovered the sacred art of herbal alchemy.
+                    </p>
+                    <p>
+                        Each of our herbal blends is crafted with intention, combining time-honored 
+                        botanical knowledge with the purest organic ingredients. We honor the cycles 
+                        of nature, harvesting herbs at their peak potency during sacred moon phases.
+                    </p>
+                    <p>
+                        Our mission transcends commerce—we are guardians of botanical heritage, 
+                        sharing the forest's gifts with those seeking balance, healing, and connection 
+                        to the natural world. Every cup is a ritual, every sip a journey home to nature.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sampriti Botanicals</h3>
+                    <p>
+                        Where ancient wisdom meets modern wellness. 
+                        Crafting sacred herbal blends with reverence and love.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <p>Email: hello@sampritibotanicals.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Location: Mystical Forest Grove</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Explore</h3>
+                    <p><a href="#products">Tea Collection</a></p>
+                    <p><a href="#about">Our Story</a></p>
+                    <p><a href="#">Brewing Rituals</a></p>
+                    <p><a href="#">Wholesale</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sampriti Botanicals. All rights reserved. Crafted with reverence for nature.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Enhancement Script -->
+    <script>
+        // Dynamically set hero background
+        const hero = document.querySelector('.hero::before');
+        
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Fade in elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .about-content').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
