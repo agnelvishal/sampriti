@@ -199,7 +199,7 @@ ul {
     padding: 120px 0;
     text-align: center;
     background-color: var(--bg-light);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/images/brand2.jpg');
+    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.1) 100%), url('assets/images/brand2.jpg');
     background-size: cover;
     background-position: center;
 }
