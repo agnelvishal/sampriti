@@ -181,7 +181,7 @@
                                 <li><strong>Lemon</strong> - Supports liver function and assimilation.</li>
                             </ul>
                         </div>
-                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-secondary buy-now-btn" data-product="SHAKTI PEYA">Buy Now</button>
                     </div>
                 </div>
 
@@ -217,7 +217,7 @@
                                 <li><strong>Peppermint</strong> - Light digestive and nervine support.</li>
                             </ul>
                         </div>
-                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-secondary buy-now-btn" data-product="CHANDRA RASA">Buy Now</button>
                     </div>
                     <div class="col-half">
                         <div class="product-image">
@@ -256,7 +256,7 @@
                                     immune modulation and systemic protection.</li>
                             </ul>
                         </div>
-                        <button class="btn btn-secondary">Add to Cart</button>
+                        <button class="btn btn-secondary buy-now-btn" data-product="SHOTHARAHA">Buy Now</button>
                     </div>
                 </div>
 
@@ -284,6 +284,39 @@
             </div>
         </div>
     </footer>
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="modal-product-name"></p>
+            <form id="buy-form">
+                <input type="hidden" id="product-name" name="product-name">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
