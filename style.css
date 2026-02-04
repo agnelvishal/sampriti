@@ -161,8 +161,22 @@ ul {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo img {
     height: 60px;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--primary-color-2);
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .main-nav ul {
