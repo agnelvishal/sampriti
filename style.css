@@ -1,0 +1,439 @@
+/* CSS Variables */
+:root {
+    --primary-color-1: #82341a;
+    /* Product 1 (Shakti Peya) - Brownish Red */
+    --primary-color-2: #2f3f5a;
+    /* Product 2 (Chandra Rasa) - Deep Blue/Navy */
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-color: #ffffff;
+    --bg-light: #f9f9f9;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --container-width: 1200px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 32px;
+    --spacing-lg: 64px;
+    --spacing-xl: 96px;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--primary-color-2);
+    /* Using the deep blue for headings for elegance */
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.section-padding {
+    padding: var(--spacing-xl) 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.max-width-800 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    color: var(--primary-color-1);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color-1);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #6a2a15;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--primary-color-2);
+    color: var(--primary-color-2);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+
+/* Header */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.main-nav a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--primary-color-2);
+}
+
+.main-nav a:hover {
+    color: var(--primary-color-1);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0;
+    text-align: center;
+    background-color: var(--bg-light);
+    /* Or a very subtle gradient */
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-md);
+    color: var(--primary-color-2);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+}
+
+/* About Section */
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Sections Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-half {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Standards Grid */
+.standards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.standard-item {
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.standard-item:hover {
+    transform: translateY(-5px);
+}
+
+.standard-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+.standard-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.standard-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Product Cards */
+.product-card {
+    margin-bottom: var(--spacing-xl);
+    align-items: center;
+}
+
+.product-image {
+    padding: var(--spacing-md);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+}
+
+.product-image img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.product-details {
+    padding-left: var(--spacing-lg);
+}
+
+.product-card.reverse-mobile .product-details {
+    padding-left: 0;
+    padding-right: var(--spacing-lg);
+}
+
+.product-card:nth-child(even) .product-details {
+    padding-left: 0;
+    padding-right: var(--spacing-lg);
+}
+
+.product-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.product-subtitle {
+    font-size: 1.2rem;
+    color: var(--primary-color-1);
+    margin-bottom: 0;
+    font-family: var(--font-heading);
+    font-style: italic;
+}
+
+.product-specs {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-light);
+}
+
+.ingredients-list {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.ingredients-list h4 {
+    font-size: 1.1rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.ingredients-list ul li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.ingredients-list ul li::before {
+    content: "•";
+    color: var(--primary-color-1);
+    position: absolute;
+    left: 0;
+}
+
+/* Placeholder Product Image */
+.placeholder-image {
+    height: 400px;
+    background-color: var(--primary-color-2);
+    color: white;
+    width: 100%;
+}
+
+.image-text-placeholder {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+
+/* Footer */
+.main-footer {
+    background-color: var(--primary-color-2);
+    color: white;
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: var(--spacing-md);
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-half {
+        width: 100%;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .product-card,
+    .product-card:nth-child(even) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-details,
+    .product-card.reverse-mobile .product-details,
+    .product-card:nth-child(even) .product-details {
+        padding: 0;
+        margin-top: var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .main-header .container {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .ingredients-list ul li {
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+}

@@ -1,190 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sampriti Botanicals - Premium herbal teas from the mystical forest. Discover our Celtic-inspired collection of organic herbal blends.">
-    <meta name="keywords" content="herbal tea, organic tea, botanical tea, Celtic tea, forest tea, premium tea">
-    <title>Sampriti Botanicals | Mystical Herbal Teas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sampriti - Indian Herbal Lineage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header Navigation -->
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">Sampriti Botanicals</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Collection</a></li>
-                <li><a href="#about">Our Story</a></li>
-                <li><a href="#contact">Connect</a></li>
-            </ul>
-        </nav>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo-trans.png" alt="Sampriti Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle">Ancient Wisdom • Modern Wellness</p>
-            <h1>Sampriti Botanicals</h1>
-            <p class="hero-description">
-                Journey through mystical forests and discover the sacred art of herbal tea. 
-                Each blend is a ritual, a connection to nature's ancient healing powers, 
-                crafted with reverence and timeless Celtic traditions.
-            </p>
-            <a href="#products" class="cta-button">Explore Our Collection</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">Rooted in India's living herbal lineages.</h1>
+                <p class="hero-subtitle">Sampriti arises from a continuum of deep botanical understanding.</p>
+                <a href="#products" class="btn btn-primary">Discover Our Products</a>
+            </div>
+        </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Sacred Tea Collection</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="product-druid-brew.jpg" alt="Druid's Brew Tea" class="product-image" id="product-1">
-                    <h3 class="product-name">Druid's Brew</h3>
-                    <p class="product-description">
-                        A mystical blend of chamomile, elderflower, and sacred herbs. 
-                        Designed to calm the spirit and connect you with ancient forest wisdom. 
-                        Perfect for evening rituals and meditation.
-                    </p>
+        <!-- About Section -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">About Sampriti</span>
+                    <h2>A Continuum of Healing</h2>
                 </div>
-
-                <div class="product-card">
-                    <img src="product-moonlight-blend.jpg" alt="Moonlight Blend Tea" class="product-image" id="product-2">
-                    <h3 class="product-name">Moonlight Blend</h3>
-                    <p class="product-description">
-                        Inspired by Celtic moon ceremonies, this ethereal mix of lavender, 
-                        mint, and silver needle tea awakens intuition and brings tranquility. 
-                        Best enjoyed under starlight.
-                    </p>
-                </div>
-
-                <div class="product-card">
-                    <img src="product-forest-elixir.jpg" alt="Forest Elixir Tea" class="product-image" id="product-3">
-                    <h3 class="product-name">Forest Elixir</h3>
-                    <p class="product-description">
-                        A revitalizing potion of green tea, pine needles, and wild berries. 
-                        Channels the energy of ancient groves and awakens your inner vitality. 
-                        An invigorating morning companion.
-                    </p>
+                <div class="about-content max-width-800 text-center">
+                    <p>India's medical heritage extends across many systems of plant knowledge that evolved through
+                        geography, ecology, and lived experience. Alongside Siddha medicine of the South, there exist
+                        Himalayan healing traditions, village pharmacopeias, and tribal systems that have preserved
+                        sophisticated botanical understanding for centuries.</p>
+                    <p>These include <strong>Sowa-Rigpa</strong> of the trans-Himalayan regions, <strong>Vaidya
+                            paramparas</strong> of central India, and tribal medical traditions such as
+                        <strong>Irula</strong>, <strong>Kani</strong>, <strong>Gond</strong>, and <strong>Toda</strong>
+                        ethnomedicine - each shaped by forests, mountains, coastlines, and climate.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>The Sacred Path</h2>
-            <div class="about-content">
-                <img src="about-image.jpg" alt="Sampriti Botanicals Story" class="about-image" id="about-img">
-                <div class="about-text">
-                    <p>
-                        <strong>Sampriti Botanicals</strong> was born from a deep reverence for nature's 
-                        ancient healing wisdom. In the heart of mystical forests, where Celtic traditions 
-                        whisper through the trees, we discovered the sacred art of herbal alchemy.
-                    </p>
-                    <p>
-                        Each of our herbal blends is crafted with intention, combining time-honored 
-                        botanical knowledge with the purest organic ingredients. We honor the cycles 
-                        of nature, harvesting herbs at their peak potency during sacred moon phases.
-                    </p>
-                    <p>
-                        Our mission transcends commerce—we are guardians of botanical heritage, 
-                        sharing the forest's gifts with those seeking balance, healing, and connection 
-                        to the natural world. Every cup is a ritual, every sip a journey home to nature.
-                    </p>
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section-padding bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-half">
+                        <span class="eyebrow">Our Philosophy</span>
+                        <h2>Plants shaped by land, time, and rhythm.</h2>
+                        <p>Across traditional cultures, herbal knowledge has always been inseparable from ecology.
+                            Plants were observed through seasons of growth, dormancy, flowering, and decay - and
+                            harvested with attention to soil health, climate, and timing.</p>
+                        <p>At Sampriti, we source as much as possible from <strong>wild, forested, mountainous, and
+                                non-industrial landscapes</strong>, working with small cultivators, gatherers, and
+                            suppliers who respect natural cycles and regeneration.</p>
+                    </div>
+                    <div class="col-half">
+                        <!-- Placeholder for an image or just a decorative element -->
+                        <div class="philosophy-visual">
+                            <div class="decorative-circle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="contact">
+        <!-- Standards Section -->
+        <section id="standards" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Standards</h2>
+                </div>
+                <div class="standards-grid">
+                    <div class="standard-item">
+                        <div class="icon">🌱</div>
+                        <h3>Ethically Sourced</h3>
+                        <p>Respectful sourcing that supports cultivators, foragers, and ecosystems.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">✨</div>
+                        <h3>Clean Formulations</h3>
+                        <p>Whole botanicals, thoughtfully combined.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">⚖️</div>
+                        <h3>Dosage-Specific</h3>
+                        <p>Precise quantities designed for balance and safety.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">🥣</div>
+                        <h3>Small-Batch Crafted</h3>
+                        <p>Prepared in limited quantities with attention and care.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">🚫</div>
+                        <h3>No Additives</h3>
+                        <p>No artificial flavours, colours, preservatives, or bulking agents.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">🐰</div>
+                        <h3>No Animal Testing</h3>
+                        <p>Never tested on animals.</p>
+                    </div>
+                    <div class="standard-item">
+                        <div class="icon">🌿</div>
+                        <h3>Vegan</h3>
+                        <p>Plant based formulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Shop</span>
+                    <h2>Botanical Formulations</h2>
+                </div>
+
+                <!-- Product 1: Shakti Peya -->
+                <div class="product-card row reverse-mobile">
+                    <div class="col-half">
+                        <div class="product-image">
+                            <img src="assets/images/shakthi.png" alt="Shakti Peya - Energy Elixir">
+                        </div>
+                    </div>
+                    <div class="col-half product-details">
+                        <h3>SHAKTI PEYA</h3>
+                        <p class="product-subtitle">Energy Elixir</p>
+                        <p class="product-specs">11 Botanical Ingredients | <strong>$33</strong></p>
+
+                        <div class="product-desc">
+                            <p>Shakti Peya is designed to support <strong>sustained vitality, circulation, digestion,
+                                    and metabolic balance</strong>. The formulation encourages steady energy, warmth,
+                                and resilience - without sharp stimulation or depletion.</p>
+                        </div>
+
+                        <div class="ingredients-list">
+                            <h4>Ingredient Highlights</h4>
+                            <ul>
+                                <li><strong>Cardamom</strong> - Supports digestion and gentle metabolic activation.</li>
+                                <li><strong>Coriander Seeds</strong> - Cooling and balancing; aids digestive clarity.
+                                </li>
+                                <li><strong>Curry Leaves</strong> - Traditionally associated with metabolic and
+                                    micronutrient support.</li>
+                                <li><strong>Pomegranate Peel</strong> - Antioxidant-rich; supports gut and cellular
+                                    health.</li>
+                                <li><strong>Rose Damascus</strong> - Cooling and harmonising; supports emotional balance
+                                    and circulation.</li>
+                                <li><strong>Hibiscus</strong> - Supports cardiovascular health and detox pathways.</li>
+                                <li><strong>Bay Leaf</strong> - Traditionally used for digestion and metabolic balance.
+                                </li>
+                                <li><strong>Cinnamon</strong> - Warming circulatory stimulant; supports metabolic fire.
+                                </li>
+                                <li><strong>Turmeric</strong> - Foundational anti-inflammatory; supports joints and
+                                    immunity.</li>
+                                <li><strong>Ginger</strong> - Enhances digestion and bioavailability.</li>
+                                <li><strong>Lemon</strong> - Supports liver function and assimilation.</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Chandra Rasa -->
+                <div class="product-card row">
+                    <div class="col-half product-details">
+                        <h3>CHANDRA RASA</h3>
+                        <p class="product-subtitle">Sleep Potion</p>
+                        <p class="product-specs">9 Botanical Ingredients | <strong>$33</strong></p>
+
+                        <div class="product-desc">
+                            <p>Chandra Rasa supports <strong>nervous system calm, mental quietude, and restorative
+                                    sleep</strong>. The formulation encourages the body to unwind naturally, supporting
+                                nighttime recovery and emotional balance.</p>
+                        </div>
+
+                        <div class="ingredients-list">
+                            <h4>Ingredient Highlights</h4>
+                            <ul>
+                                <li><strong>Sarpagandha</strong> - Traditionally used to quiet the nervous system and
+                                    support deep rest.</li>
+                                <li><strong>Blue Butterfly Pea</strong> - Supports cognitive calm and antioxidant
+                                    protection.</li>
+                                <li><strong>Cloves</strong> - Gentle digestive support and warmth.</li>
+                                <li><strong>Fennel</strong> - Soothes digestion and reduces nighttime discomfort.</li>
+                                <li><strong>Licorice</strong> - Harmonising herb; supports adrenal and throat comfort.
+                                </li>
+                                <li><strong>Jatamansi</strong> - Traditionally used to calm the mind and emotions.</li>
+                                <li><strong>Brahmi</strong> - Classic nervine; supports mental clarity and stress
+                                    resilience.</li>
+                                <li><strong>Ashwagandha</strong> - Adaptogen supporting stress balance and restoration.
+                                </li>
+                                <li><strong>Peppermint</strong> - Light digestive and nervine support.</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                    <div class="col-half">
+                        <div class="product-image">
+                            <img src="assets/images/chandra-rasa.png" alt="Chandra Rasa - Sleep Potion">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Shotharaha -->
+                <div class="product-card row reverse-mobile">
+                    <div class="col-half">
+                        <div class="product-image placeholder-image">
+                            <!-- Using a placeholder or styled box since no image was provided -->
+                            <div class="image-text-placeholder">
+                                <span>SHOTHARAHA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-half product-details">
+                        <h3>SHOTHARAHA</h3>
+                        <p class="product-subtitle">Dual Black Recovery</p>
+                        <p class="product-specs">2 Botanical Ingredients | <strong>$39</strong></p>
+
+                        <div class="product-desc">
+                            <p>Shotharaha focuses on <strong>inflammation balance, immune resilience, and deep systemic
+                                    recovery</strong>. Minimal in composition and potent in nature, it reflects a
+                                classical approach of restraint and precision.</p>
+                        </div>
+
+                        <div class="ingredients-list">
+                            <h4>Ingredient Highlights</h4>
+                            <ul>
+                                <li><strong>Black Turmeric</strong> - Traditionally valued in Siddha medicine for strong
+                                    anti-inflammatory and rejuvenative properties.</li>
+                                <li><strong>Black Seeds (Nigella sativa)</strong> - Revered across ancient systems for
+                                    immune modulation and systemic protection.</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sampriti Botanicals</h3>
-                    <p>
-                        Where ancient wisdom meets modern wellness. 
-                        Crafting sacred herbal blends with reverence and love.
-                    </p>
+                <div class="footer-logo">
+                    <img src="assets/images/logo-trans.png" alt="Sampriti" style="max-width: 150px;">
                 </div>
-                
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <p>Email: hello@sampritibotanicals.com</p>
-                    <p>Phone: +1 (555) 123-4567</p>
-                    <p>Location: Mystical Forest Grove</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Explore</h3>
-                    <p><a href="#products">Tea Collection</a></p>
-                    <p><a href="#about">Our Story</a></p>
-                    <p><a href="#">Brewing Rituals</a></p>
-                    <p><a href="#">Wholesale</a></p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#products">Shop</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2026 Sampriti Botanicals. All rights reserved. Crafted with reverence for nature.</p>
+                <p>&copy; 2026 Sampriti. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Background Enhancement Script -->
-    <script>
-        // Dynamically set hero background
-        const hero = document.querySelector('.hero::before');
-        
-        // Add smooth scroll behavior
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add parallax effect to hero
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Fade in elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.product-card, .about-content').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-    </script>
 </body>
+
 </html>
