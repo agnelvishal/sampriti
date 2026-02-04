@@ -199,8 +199,9 @@ ul {
     padding: 120px 0;
     text-align: center;
     background-color: var(--bg-light);
-    /* Or a very subtle gradient */
-    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/images/brand2.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
