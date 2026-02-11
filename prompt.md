@@ -1,3 +1,8 @@
+Read html, css and js code.
+
+ Can we add an image on the left for the 'About' section and align the text part to the right? Use assets/images/about.webp
+--
+
  Can we please change the product description to another page?
  Let the three product images and name  be placed next to each other in index.html page  and upon clicking then let the product details show up.
 
