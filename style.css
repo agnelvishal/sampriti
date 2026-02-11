@@ -331,6 +331,12 @@ ul {
     height: 55px;
 }
 
+.standard-item .icon.extra-bold svg {
+    stroke-width: 15;
+    stroke: #000000;
+    fill: #000000;
+}
+
 .standard-item .icon svg {
     width: 100%;
     height: 100%;
