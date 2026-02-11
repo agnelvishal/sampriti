@@ -332,7 +332,7 @@ ul {
 }
 
 .standard-item .icon.extra-bold svg {
-    stroke-width: 15;
+    stroke-width: .5;
     stroke: #000000;
     fill: #000000;
 }
