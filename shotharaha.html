@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shotharaha - Sampriti</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-trans.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Shotharaha - Dual Black Recovery by Sampriti. Supports inflammation balance, immune resilience, and deep systemic recovery.">
+    <meta name="keywords"
+        content="Shotharaha, Dual Black Recovery, Black Turmeric, Nigella Sativa, Ayurveda, Sampriti, Wellness">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-trans.png" alt="Sampriti Logo">
+                <div class="logo-text-container">
+                    <span class="logo-text">Sampriti</span>
+                    <span class="logo-subtext">Sacred Botanicals</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#philosophy">Philosophy</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-half">
+                        <div class="product-image-large">
+                            <img src="assets/images/Shrothahara.webp" alt="Shotharaha - Dual Black Recovery">
+                        </div>
+                    </div>
+                    <div class="col-half product-info">
+                        <h1>SHOTHARAHA</h1>
+                        <p class="product-subtitle-large">Dual Black Recovery</p>
+                        <p class="price">$39</p>
+                        <p class="product-specs">2 Botanical Ingredients</p>
+
+                        <div class="product-description-full">
+                            <p>Shotharaha focuses on <strong>inflammation balance, immune resilience, and deep systemic
+                                    recovery</strong>. Minimal in composition and potent in nature, it reflects a
+                                classical approach of restraint and precision.</p>
+                        </div>
+
+                        <div class="ingredients-section">
+                            <h3>Ingredient Highlights</h3>
+                            <ul class="ingredient-list">
+                                <li><strong>Black Turmeric</strong> - Traditionally valued in Siddha medicine for strong
+                                    anti-inflammatory and rejuvenative properties.</li>
+                                <li><strong>Black Seeds (Nigella sativa)</strong> - Revered across ancient systems for
+                                    immune modulation and systemic protection.</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-primary buy-now-btn" data-product="SHOTHARAHA">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-trans.png" alt="Sampriti" style="max-width: 150px;">
+                        <div class="logo-text-container">
+                            <span class="logo-text">Sampriti</span>
+                            <span class="logo-subtext">Sacred Botanicals</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#products">Shop</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sampriti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="modal-product-name"></p>
+            <form id="buy-form">
+                <input type="hidden" id="product-name" name="product-name">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakti Peya - Sampriti</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-trans.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Shakti Peya - Energy Elixir by Sampriti. Supports sustained vitality, circulation, and digestion.">
+    <meta name="keywords" content="Shakti Peya, Energy Elixir, Herbal Tea, Ayurveda, Sampriti, Wellness">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-trans.png" alt="Sampriti Logo">
+                <div class="logo-text-container">
+                    <span class="logo-text">Sampriti</span>
+                    <span class="logo-subtext">Sacred Botanicals</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#philosophy">Philosophy</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-half">
+                        <div class="product-image-large">
+                            <img src="assets/images/shakthi.jpg" alt="Shakti Peya - Energy Elixir">
+                        </div>
+                    </div>
+                    <div class="col-half product-info">
+                        <h1>SHAKTI PEYA</h1>
+                        <p class="product-subtitle-large">Energy Elixir</p>
+                        <p class="price">$33</p>
+                        <p class="product-specs">11 Botanical Ingredients</p>
+
+                        <div class="product-description-full">
+                            <p>Shakti Peya is designed to support <strong>sustained vitality, circulation, digestion,
+                                    and metabolic balance</strong>. The formulation encourages steady energy, warmth,
+                                and resilience - without sharp stimulation or depletion.</p>
+                        </div>
+
+                        <div class="ingredients-section">
+                            <h3>Ingredient Highlights</h3>
+                            <ul class="ingredient-list">
+                                <li><strong>Cardamom</strong> - Supports digestion and gentle metabolic activation.</li>
+                                <li><strong>Coriander Seeds</strong> - Cooling and balancing; aids digestive clarity.
+                                </li>
+                                <li><strong>Curry Leaves</strong> - Traditionally associated with metabolic and
+                                    micronutrient support.</li>
+                                <li><strong>Pomegranate Peel</strong> - Antioxidant-rich; supports gut and cellular
+                                    health.</li>
+                                <li><strong>Rose Damascus</strong> - Cooling and harmonising; supports emotional balance
+                                    and circulation.</li>
+                                <li><strong>Hibiscus</strong> - Supports cardiovascular health and detox pathways.</li>
+                                <li><strong>Bay Leaf</strong> - Traditionally used for digestion and metabolic balance.
+                                </li>
+                                <li><strong>Cinnamon</strong> - Warming circulatory stimulant; supports metabolic fire.
+                                </li>
+                                <li><strong>Turmeric</strong> - Foundational anti-inflammatory; supports joints and
+                                    immunity.</li>
+                                <li><strong>Ginger</strong> - Enhances digestion and bioavailability.</li>
+                                <li><strong>Lemon</strong> - Supports liver function and assimilation.</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-primary buy-now-btn" data-product="SHAKTI PEYA">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-trans.png" alt="Sampriti" style="max-width: 150px;">
+                        <div class="logo-text-container">
+                            <span class="logo-text">Sampriti</span>
+                            <span class="logo-subtext">Sacred Botanicals</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#products">Shop</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sampriti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="modal-product-name"></p>
+            <form id="buy-form">
+                <input type="hidden" id="product-name" name="product-name">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

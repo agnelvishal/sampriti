@@ -1,3 +1,20 @@
+ Can we please change the product description to another page?
+ Let the three product images and name  be placed next to each other in index.html page  and upon clicking then let the product details show up.
+
+Also add he prices in each product page.
+
+**Energy Elixir**  
+**Price: \$33**
+
+
+**CHANDRA RASA**
+**Price: \$33**
+
+**Dual Black Recovery**  
+2 Botanical Ingredients  
+**Price: \$39**
+
+--
 create a static website for Sampriti.
 
 Info on Sampriti is in sampriti.md

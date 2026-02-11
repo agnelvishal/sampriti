@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandra Rasa - Sampriti</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-trans.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Chandra Rasa - Sleep Potion by Sampriti. Supports nervous system calm, mental quietude, and restorative sleep.">
+    <meta name="keywords" content="Chandra Rasa, Sleep Potion, Herbal Tea, Ayurveda, Sampriti, Wellness, Sleep Aid">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-trans.png" alt="Sampriti Logo">
+                <div class="logo-text-container">
+                    <span class="logo-text">Sampriti</span>
+                    <span class="logo-subtext">Sacred Botanicals</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#philosophy">Philosophy</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-half">
+                        <div class="product-image-large">
+                            <img src="assets/images/chandra-rasa.jpg" alt="Chandra Rasa - Sleep Potion">
+                        </div>
+                    </div>
+                    <div class="col-half product-info">
+                        <h1>CHANDRA RASA</h1>
+                        <p class="product-subtitle-large">Sleep Potion</p>
+                        <p class="price">$33</p>
+                        <p class="product-specs">9 Botanical Ingredients</p>
+
+                        <div class="product-description-full">
+                            <p>Chandra Rasa supports <strong>nervous system calm, mental quietude, and restorative
+                                    sleep</strong>. The formulation encourages the body to unwind naturally, supporting
+                                nighttime recovery and emotional balance.</p>
+                        </div>
+
+                        <div class="ingredients-section">
+                            <h3>Ingredient Highlights</h3>
+                            <ul class="ingredient-list">
+                                <li><strong>Sarpagandha</strong> - Traditionally used to quiet the nervous system and
+                                    support deep rest.</li>
+                                <li><strong>Blue Butterfly Pea</strong> - Supports cognitive calm and antioxidant
+                                    protection.</li>
+                                <li><strong>Cloves</strong> - Gentle digestive support and warmth.</li>
+                                <li><strong>Fennel</strong> - Soothes digestion and reduces nighttime discomfort.</li>
+                                <li><strong>Licorice</strong> - Harmonising herb; supports adrenal and throat comfort.
+                                </li>
+                                <li><strong>Jatamansi</strong> - Traditionally used to calm the mind and emotions.</li>
+                                <li><strong>Brahmi</strong> - Classic nervine; supports mental clarity and stress
+                                    resilience.</li>
+                                <li><strong>Ashwagandha</strong> - Adaptogen supporting stress balance and restoration.
+                                </li>
+                                <li><strong>Peppermint</strong> - Light digestive and nervine support.</li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-primary buy-now-btn" data-product="CHANDRA RASA">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-trans.png" alt="Sampriti" style="max-width: 150px;">
+                        <div class="logo-text-container">
+                            <span class="logo-text">Sampriti</span>
+                            <span class="logo-subtext">Sacred Botanicals</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#products">Shop</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sampriti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="modal-product-name"></p>
+            <form id="buy-form">
+                <input type="hidden" id="product-name" name="product-name">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
