@@ -117,6 +117,7 @@ ul {
     display: inline-block;
     padding: 12px 30px;
     border-radius: 4px;
+    font-family: var(--font-heading);
     font-weight: 500;
     letter-spacing: 0.5px;
     cursor: pointer;
@@ -185,6 +186,7 @@ ul {
 }
 
 .main-nav a {
+    font-family: var(--font-heading);
     font-weight: 500;
     font-size: 0.95rem;
     color: var(--primary-color-2);
@@ -447,6 +449,7 @@ ul {
 }
 
 .footer-links a {
+    font-family: var(--font-heading);
     color: rgba(255, 255, 255, 0.8);
     margin-left: var(--spacing-md);
 }
