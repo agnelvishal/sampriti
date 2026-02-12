@@ -9,7 +9,7 @@
     --bg-color: #ffffff;
     --bg-light: #f9f9f9;
     --font-heading: 'Tenor Sans', sans-serif;
-    --font-body: 'Tinos', serif;
+    --font-body: 'DM Sans', sans-serif;
     --container-width: 1200px;
     --spacing-xs: 8px;
     --spacing-sm: 16px;
@@ -780,33 +780,31 @@ ul {
         font-size: 2rem;
     }
 }
+
 /* New Font Utilities */
-.tinos-regular {
-  font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: normal;
+.dm-sans-regular {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.tinos-bold {
-  font-family: "Tinos", serif;
-  font-weight: 700;
-  font-style: normal;
+.dm-sans-bold {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 
-.tinos-regular-italic {
-  font-family: "Tinos", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.tinos-bold-italic {
-  font-family: "Tinos", serif;
-  font-weight: 700;
-  font-style: italic;
+.dm-sans-italic {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .tenor-sans-regular {
-  font-family: "Tenor Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
