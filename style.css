@@ -239,6 +239,7 @@ ul {
     position: relative;
     padding: 0;
     margin-bottom: 0;
+    background-color: #f4f1ea;
     /* Override previous margin */
 }
 
