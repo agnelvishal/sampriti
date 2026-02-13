@@ -259,15 +259,11 @@ ul {
 }
 
 .about-content-inner {
-    padding: var(--spacing-lg);
-    /* Reduced padding */
-    max-width: 650px;
+    /* padding: var(--spacing-lg); */
+    padding: 5px 100px;
+    max-width: 750px;
 }
 
-.about-content-inner p {
-    font-size: 1.1rem;
-    margin-bottom: var(--spacing-md);
-}
 
 /* Remove old About styles that interfere */
 .about-content p {
@@ -283,9 +279,6 @@ ul {
         width: 100%;
     }
 
-    .about-image-side {
-        height: 300px;
-    }
 
     .about-content-inner {
         padding: var(--spacing-md);
