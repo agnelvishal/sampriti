@@ -230,8 +230,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 600px;
-    /* Ensure substantial height */
+    min-height: 300px;
+    /* Reduced from 600px */
 }
 
 .about-image-side {
@@ -260,7 +260,8 @@ ul {
 }
 
 .about-content-inner {
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg);
+    /* Reduced padding */
     max-width: 650px;
 }
 
