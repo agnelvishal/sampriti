@@ -265,6 +265,10 @@ ul {
     max-width: 850px;
 }
 
+.about-content-inner.content-left {
+    padding: 35px 70px 15px 100px;
+}
+
 
 /* Remove old About styles that interfere */
 .about-content p {
