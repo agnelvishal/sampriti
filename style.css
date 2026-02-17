@@ -201,7 +201,9 @@ ul {
     padding: 120px 0;
     text-align: center;
     background-color: var(--bg-light);
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.1) 100%), url('assets/images/brand2.jpg');
+    /* background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.1) 100%), url('assets/images/brand2.jpg'); */
+    background-image: url('assets/images/brand2.jpg');
+
     background-size: cover;
     background-position: center;
 }
@@ -210,8 +212,15 @@ ul {
     font-size: 3.5rem;
     max-width: 900px;
     margin: 0 auto var(--spacing-md);
-    color: var(--primary-color-2);
+    /* color: var(--primary-color-2); */
+    color: #fff;
 }
+
+.hero-title-small {
+    font-size: 1.5rem;
+}
+
+
 
 .hero-subtitle {
     font-size: 1.25rem;
@@ -421,7 +430,6 @@ ul {
 
 .product-specs {
     font-size: 1.1rem;
-    margin-bottom: var(--spacing-md);
     color: var(--text-light);
 }
 
@@ -765,7 +773,6 @@ ul {
     font-style: italic;
     font-size: 1.5rem;
     color: var(--primary-color-1);
-    margin-bottom: var(--spacing-md);
 }
 
 .price {
@@ -781,35 +788,7 @@ ul {
     line-height: 1.7;
 }
 
-.ingredients-section {
-    margin-top: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-    background-color: var(--bg-light);
-    padding: var(--spacing-md);
-    border-radius: 8px;
-}
 
-.ingredients-section h3 {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-sm);
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.ingredient-list li {
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 20px;
-}
-
-.ingredient-list li::before {
-    content: "•";
-    color: var(--primary-color-1);
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-    line-height: 1;
-}
 
 @media (max-width: 768px) {
     .product-info {
