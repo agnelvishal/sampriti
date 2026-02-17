@@ -217,10 +217,17 @@ ul {
 }
 
 .hero-title-small {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
+    margin-bottom: 0 !important;
+
 }
 
-
+@media (max-width: 768px) {
+    .hero-title-small {
+        font-size: 1rem !important;
+        margin-bottom: 0 !important;
+    }
+}
 
 .hero-subtitle {
     font-size: 1.25rem;
