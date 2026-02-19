@@ -1,6 +1,6 @@
 /* CSS Variables */
 :root {
-    --primary-color-1: #82341a;
+    --primary-color-1: #4e4e4e;
     /* Product 1 (Shakti Peya) - Brownish Red */
     --primary-color-2: #2f3f5a;
     /* Product 2 (Chandra Rasa) - Deep Blue/Navy */
@@ -208,8 +208,18 @@ ul {
     background-position: center;
 }
 
+#hero a.btn.btn-primary {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid white;
+}
+
+#hero a.btn.btn-primary:hover {
+    background-color: #432108;
+    ;
+}
+
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     max-width: 900px;
     margin: 0 auto var(--spacing-md);
     /* color: var(--primary-color-2); */
@@ -217,7 +227,7 @@ ul {
 }
 
 .hero-title-small {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
     margin-bottom: 0 !important;
 
 }
