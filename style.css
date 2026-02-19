@@ -803,6 +803,23 @@ ul {
     transition: background-color 0.3s ease;
 }
 
+/* Blog Page Styles */
+.blog-hero-section {
+    position: relative;
+    height: 70vh;
+    background-image: url('assets/images/blog/cardamon.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog-hero-section .container {
+    width: 100%;
+}
+
 .contact-submit-btn:hover {
     background-color: #a07d55;
 }
