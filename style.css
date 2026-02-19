@@ -1165,7 +1165,7 @@ ul {
     margin-bottom: var(--spacing-lg);
     border-radius: 8px;
     overflow: hidden;
-    max-height: 600px;
+    max-height: 800px;
     /* Limit height to keep content accessible */
 }
 
