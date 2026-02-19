@@ -739,8 +739,15 @@ ul {
 
 .contact-section-title {
     font-size: 2rem;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: var(--primary-color-1);
+}
+
+.contact-description {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 /* Contact Form Styles */
