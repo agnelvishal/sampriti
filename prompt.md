@@ -1,6 +1,6 @@
 Read html, css and js code.
 
- Can we add an image on the left for the 'About' section and align the text part to the right? Use assets/images/about.webp
+ Can we add an image on the left for the 'About' section and align the text part to the right? Use assets/images/about.avif
 --
 
  Can we please change the product description to another page?
