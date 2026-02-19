@@ -698,7 +698,7 @@ ul {
 /* Contact Page Styles */
 .contact-hero-section {
     position: relative;
-    height: 800px;
+    height: 70vh;
     background-image: url('assets/images/contact.avif');
     /* Using existing brand image or placeholder */
     background-size: cover;
