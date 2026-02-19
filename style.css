@@ -704,8 +704,13 @@ ul {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding-bottom: 80px;
+}
+
+.contact-hero-section .container {
+    width: 100%;
 }
 
 .contact-hero-overlay {
@@ -870,6 +875,13 @@ ul {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
+
+    .contact-hero-section {
+        align-items: center;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
 
     .contact-info-col {
         padding-left: 0;
