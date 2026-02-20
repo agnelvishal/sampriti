@@ -510,7 +510,7 @@ ul {
 
 /* Footer */
 .main-footer {
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-color-1);
     color: white;
     padding: var(--spacing-lg) 0 var(--spacing-md);
 }
