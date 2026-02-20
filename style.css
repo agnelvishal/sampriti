@@ -831,6 +831,10 @@ ul {
     width: 100%;
 }
 
+#shop-hero {
+    background-image: url('assets/images/cinnamon.jpg');
+}
+
 .contact-submit-btn:hover {
     background-color: #a07d55;
 }
