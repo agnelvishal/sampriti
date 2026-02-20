@@ -1335,11 +1335,13 @@ ul {
 
 .subscribe-form {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
 }
 
 .subscribe-form input {
-    flex: 1;
+    width: 100%;
     padding: 12px 15px;
     border: 1px solid #ccc;
     background-color: white;
@@ -1355,6 +1357,7 @@ ul {
 }
 
 .subscribe-form .btn {
+    width: 100%;
     padding: 12px 30px;
     white-space: nowrap;
 }
@@ -1372,13 +1375,5 @@ ul {
 
     .subscribe-content-inner {
         padding: var(--spacing-lg) var(--spacing-md);
-    }
-
-    .subscribe-form {
-        flex-direction: column;
-    }
-
-    .subscribe-form .btn {
-        width: 100%;
     }
 }
