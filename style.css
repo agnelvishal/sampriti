@@ -513,6 +513,7 @@ ul {
     background-color: var(--primary-color-1);
     color: white;
     padding: var(--spacing-lg) 0 var(--spacing-md);
+    margin-top: 20px;
 }
 
 .footer-logo {
