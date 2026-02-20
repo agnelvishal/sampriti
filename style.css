@@ -491,6 +491,50 @@ ul {
     left: 0;
 }
 
+/* Collapsible Sections */
+.product-collapsible {
+    margin-top: var(--spacing-md);
+    border-top: 1px solid #eee;
+}
+
+.product-collapsible details {
+    border-bottom: 1px solid #eee;
+}
+
+.product-collapsible summary {
+    list-style: none;
+    padding: 16px 0;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--primary-color-2);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-collapsible summary::-webkit-details-marker {
+    display: none;
+}
+
+.product-collapsible summary::after {
+    content: "▼";
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.product-collapsible details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.product-collapsible .collapsible-content {
+    padding-bottom: 16px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Placeholder Product Image */
 .placeholder-image {
     height: 400px;
