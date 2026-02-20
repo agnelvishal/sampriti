@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Sampriti Botanicals</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-trans.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Our botanical formulations: Shakti Peya, Chandra Rasa, and Shotharaha.">
+    <meta name="keywords" content="Shop, Herbal, Ayurveda, India, Botanicals, Tea, Wellness, Sampriti">
+    <meta name="author" content="Sampriti Botanicals">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo-trans-text.png" alt="Sampriti Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="shop.html" class="active">SHOP</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="blog-hero" class="blog-hero-section">
+            <div class="container">
+                <h6 class="hero-title hero-title-small">OUR APOTHECARY</h6>
+                <h1 class="hero-title">SACRED BOTANICALS</h1>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section-padding bg-light">
+            <div class="container">
+
+                <div class="products-grid">
+                    <!-- Product 1: Shakti Peya -->
+                    <a href="shakti-peya.html" class="product-grid-item">
+                        <div class="product-grid-image">
+                            <img src="assets/images/shakthi.webp" alt="Shakti Peya - Energy Elixir">
+                        </div>
+                        <h3>SHAKTI PEYA</h3>
+                        <p class="product-grid-subtitle">Energy Elixir</p>
+                    </a>
+
+                    <!-- Product 2: Chandra Rasa -->
+                    <a href="chandra-rasa.html" class="product-grid-item">
+                        <div class="product-grid-image">
+                            <img src="assets/images/chandra.webp" alt="Chandra Rasa - Sleep Potion">
+                        </div>
+                        <h3>CHANDRA RASA</h3>
+                        <p class="product-grid-subtitle">Sleep Potion</p>
+                    </a>
+
+                    <!-- Product 3: Shotharaha -->
+                    <a href="shotharaha.html" class="product-grid-item">
+                        <div class="product-grid-image">
+                            <img src="assets/images/shrothahara.avif" alt="Shotharaha - Dual Black Recovery">
+                        </div>
+                        <h3>SHOTHARAHA</h3>
+                        <p class="product-grid-subtitle">Dual Black Recovery</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo-trans-text.png" alt="Sampriti" style="max-width: 150px;">
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#products">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sampriti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="buy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Complete Your Order</h2>
+            <p id="modal-product-name"></p>
+            <form id="buy-form">
+                <input type="hidden" id="product-name" name="product-name">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
