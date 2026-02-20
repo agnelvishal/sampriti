@@ -146,6 +146,17 @@ ul {
     color: white;
 }
 
+.btn-view-more {
+    background-color: rgba(78, 78, 78, 0.1);
+    color: var(--primary-color-1);
+    border: 1px solid var(--primary-color-1);
+}
+
+.btn-view-more:hover {
+    background-color: var(--primary-color-1);
+    color: white;
+}
+
 /* Header */
 .main-header {
     background-color: #FAF9F6;
