@@ -1295,6 +1295,10 @@ ul {
     overflow: hidden;
 }
 
+#subscribe p {
+    margin-bottom: 40px;
+}
+
 .subscribe-split-layout {
     display: flex;
     flex-wrap: wrap;
