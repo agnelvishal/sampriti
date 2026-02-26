@@ -310,7 +310,7 @@ ul {
 }
 
 #hero a.btn.btn-primary:hover {
-    background-color: #432108;
+    background-color: var(--primary-color-1);
     ;
 }
 
