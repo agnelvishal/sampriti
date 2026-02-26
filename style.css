@@ -6,7 +6,7 @@
     /* Product 2 (Chandra Rasa) - Deep Blue/Navy */
     --text-color: #333333;
     --text-light: #666666;
-    --bg-color: #ffffff;
+    --bg-color: #FAF9F6;
     --bg-light: #f9f9f9;
     --font-heading: 'Tenor Sans', sans-serif;
     --font-body: 'DM Sans', sans-serif;
@@ -366,7 +366,7 @@ ul {
 }
 
 .about-image-side {
-    width: 50%;
+    width: 57%;
     position: relative;
     padding: 0;
     margin-bottom: 0;
@@ -383,10 +383,10 @@ ul {
 }
 
 .about-content-side {
-    width: 50%;
+    width: 43%;
     display: flex;
     align-items: center;
-    background-color: #f4f1ea;
+    background-color: #FAF9F6;
     /* Soft organic background color */
 }
 
