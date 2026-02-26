@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // On pages without a hero section, always show the scrolled (solid) header
     if (!heroSection) {
         if (mainHeader) mainHeader.classList.add('scrolled');
+        document.body.classList.add('no-hero');
     } else {
         function updateHeader() {
             const heroBottom = heroSection.getBoundingClientRect().bottom;
