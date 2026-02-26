@@ -3,32 +3,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainHeader = document.querySelector('.main-header');
     const heroSection = document.getElementById('hero');
 
-    function updateHeader() {
-        if (!mainHeader || !heroSection) return;
-        const heroBottom = heroSection.getBoundingClientRect().bottom;
-        const heroThreshold = heroSection.offsetHeight * 0.5;
-        if (heroBottom <= heroThreshold) {
+    // On pages without a hero section, always show the scrolled (solid) header
+    if (!heroSection) {
+        if (mainHeader) mainHeader.classList.add('scrolled');
+    } else {
+        function updateHeader() {
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            const heroThreshold = heroSection.offsetHeight * 0.5;
+            if (heroBottom <= heroThreshold) {
+                mainHeader.classList.add('scrolled');
+            } else {
+                mainHeader.classList.remove('scrolled');
+            }
+        }
+
+        window.addEventListener('scroll', updateHeader, { passive: true });
+        updateHeader(); // run once on load
+
+        // --- Hover-aware header (mirrors scroll behaviour) ---
+        mainHeader.addEventListener('mouseenter', () => {
             mainHeader.classList.add('scrolled');
-        } else {
-            mainHeader.classList.remove('scrolled');
-        }
+        });
+
+        mainHeader.addEventListener('mouseleave', () => {
+            // Only remove the class if scrolling hasn't already triggered it
+            const heroBottom = heroSection.getBoundingClientRect().bottom;
+            if (heroBottom > 0) {
+                mainHeader.classList.remove('scrolled');
+            }
+        });
     }
-
-    window.addEventListener('scroll', updateHeader, { passive: true });
-    updateHeader(); // run once on load
-
-    // --- Hover-aware header (mirrors scroll behaviour) ---
-    mainHeader.addEventListener('mouseenter', () => {
-        mainHeader.classList.add('scrolled');
-    });
-
-    mainHeader.addEventListener('mouseleave', () => {
-        // Only remove the class if scrolling hasn't already triggered it
-        const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 1;
-        if (heroBottom > 0) {
-            mainHeader.classList.remove('scrolled');
-        }
-    });
 
     // --- Hero video controls ---
     const heroVideo = document.querySelector('.hero-video-bg');
