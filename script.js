@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateHeader() {
         if (!mainHeader || !heroSection) return;
         const heroBottom = heroSection.getBoundingClientRect().bottom;
-        if (heroBottom <= 0) {
+        const heroThreshold = heroSection.offsetHeight * 0.5;
+        if (heroBottom <= heroThreshold) {
             mainHeader.classList.add('scrolled');
         } else {
             mainHeader.classList.remove('scrolled');
