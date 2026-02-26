@@ -179,7 +179,8 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-sm);
+    /* gap: var(--spacing-sm); */
+    gap: 10px;
 }
 
 .logo {
@@ -198,7 +199,7 @@ ul {
 }
 
 .main-header.scrolled .logo img {
-    filter: none;
+    filter: brightness(0) invert(0);
 }
 
 
@@ -707,7 +708,6 @@ ul {
     }
 
     .main-nav ul {
-        margin-top: 15px;
         gap: 15px;
     }
 
