@@ -1,5 +1,8 @@
 Read html, css and js code.
 
+Read index.html, style.css and script.js code.
+
+
  Can we add an image on the left for the 'About' section and align the text part to the right? Use assets/images/about.avif
 --
 

@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateHeader, { passive: true });
     updateHeader(); // run once on load
 
+    // --- Hover-aware header (mirrors scroll behaviour) ---
+    mainHeader.addEventListener('mouseenter', () => {
+        mainHeader.classList.add('scrolled');
+    });
+
+    mainHeader.addEventListener('mouseleave', () => {
+        // Only remove the class if scrolling hasn't already triggered it
+        const heroBottom = heroSection ? heroSection.getBoundingClientRect().bottom : 1;
+        if (heroBottom > 0) {
+            mainHeader.classList.remove('scrolled');
+        }
+    });
+
     // --- Hero video controls ---
     const heroVideo = document.querySelector('.hero-video-bg');
     const playPauseBtn = document.getElementById('hero-play-pause');
