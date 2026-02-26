@@ -506,6 +506,11 @@ body.no-hero>main {
 }
 
 /* Product Cards */
+
+.buy-now-btn {
+    margin-bottom: 20px;
+}
+
 .product-card {
     margin-bottom: var(--spacing-xl);
     align-items: center;
