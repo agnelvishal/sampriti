@@ -159,11 +159,18 @@ ul {
 
 /* Header */
 .main-header {
-    background-color: #FAF9F6;
+    background-color: transparent;
     padding: var(--spacing-sm) 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.main-header.scrolled {
+    background-color: #FAF9F6;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -186,7 +193,14 @@ ul {
 .logo img {
     height: auto;
     max-height: 60px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.4s ease;
 }
+
+.main-header.scrolled .logo img {
+    filter: none;
+}
+
 
 
 
@@ -200,21 +214,34 @@ ul {
     font-family: var(--font-heading);
     font-weight: 500;
     font-size: 0.95rem;
-    color: var(--primary-color-2);
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-header.scrolled .main-nav a {
+    color: var(--primary-color-2);
+}
+
+.main-header.scrolled .main-nav a:hover {
     color: var(--primary-color-1);
 }
 
 /* Hero Section */
 .hero-section {
-    padding: 120px 0;
+    padding: 0;
     text-align: center;
     background-color: var(--bg-light);
     position: relative;
     overflow: hidden;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
 }
 
 .hero-video-bg {

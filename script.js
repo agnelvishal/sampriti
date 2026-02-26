@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Scroll-aware header ---
+    const mainHeader = document.querySelector('.main-header');
+    const heroSection = document.getElementById('hero');
+
+    function updateHeader() {
+        if (!mainHeader || !heroSection) return;
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
+        if (heroBottom <= 0) {
+            mainHeader.classList.add('scrolled');
+        } else {
+            mainHeader.classList.remove('scrolled');
+        }
+    }
+
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader(); // run once on load
+
     // --- Configuration ---
     // REPLACE THIS URL with your own Google Apps Script Web App URL after deployment
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyi0XkQU-k0nZgoTR20CPEIDk4d2jLkAbyQzw7jQ3_w9lzq-zh09kfpGeyMZLswW0ds_g/exec';
