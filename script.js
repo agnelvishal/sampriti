@@ -16,6 +16,37 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateHeader, { passive: true });
     updateHeader(); // run once on load
 
+    // --- Hero video controls ---
+    const heroVideo = document.querySelector('.hero-video-bg');
+    const playPauseBtn = document.getElementById('hero-play-pause');
+    const muteUnmuteBtn = document.getElementById('hero-mute-unmute');
+
+    if (heroVideo && playPauseBtn) {
+        playPauseBtn.addEventListener('click', () => {
+            if (heroVideo.paused) {
+                heroVideo.play();
+                playPauseBtn.querySelector('.icon-pause').style.display = '';
+                playPauseBtn.querySelector('.icon-play').style.display = 'none';
+                playPauseBtn.setAttribute('aria-label', 'Pause video');
+            } else {
+                heroVideo.pause();
+                playPauseBtn.querySelector('.icon-pause').style.display = 'none';
+                playPauseBtn.querySelector('.icon-play').style.display = '';
+                playPauseBtn.setAttribute('aria-label', 'Play video');
+            }
+        });
+    }
+
+    if (heroVideo && muteUnmuteBtn) {
+        muteUnmuteBtn.addEventListener('click', () => {
+            heroVideo.muted = !heroVideo.muted;
+            muteUnmuteBtn.querySelector('.icon-muted').style.display = heroVideo.muted ? '' : 'none';
+            muteUnmuteBtn.querySelector('.icon-unmuted').style.display = heroVideo.muted ? 'none' : '';
+            muteUnmuteBtn.setAttribute('aria-label', heroVideo.muted ? 'Unmute video' : 'Mute video');
+        });
+    }
+
+
     // --- Configuration ---
     // REPLACE THIS URL with your own Google Apps Script Web App URL after deployment
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyi0XkQU-k0nZgoTR20CPEIDk4d2jLkAbyQzw7jQ3_w9lzq-zh09kfpGeyMZLswW0ds_g/exec';
