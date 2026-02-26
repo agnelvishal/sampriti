@@ -1098,7 +1098,6 @@ body.no-hero>main {
     text-align: center;
     padding: var(--spacing-md);
     background-color: white;
-    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
@@ -1156,7 +1155,6 @@ body.no-hero>main {
 
 /* Product Detail Page Styles */
 .product-image-large {
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -1335,7 +1333,6 @@ body.no-hero>main {
 
 .blog-post-image {
     margin-bottom: var(--spacing-lg);
-    border-radius: 8px;
     overflow: hidden;
     max-height: 800px;
     /* Limit height to keep content accessible */
