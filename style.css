@@ -1105,7 +1105,7 @@ body.no-hero>main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: var(--spacing-md);
+    /* padding: var(--spacing-md); */
     background-color: white;
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1136,9 +1136,9 @@ body.no-hero>main {
     transition: transform 0.5s ease;
 }
 
-.product-grid-item:hover .product-grid-image img {
+/* .product-grid-item:hover .product-grid-image img {
     transform: scale(1.05);
-}
+} */
 
 .product-grid-item h3 {
     font-size: 1.25rem;
