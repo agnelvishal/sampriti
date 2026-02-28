@@ -234,6 +234,7 @@ body.no-hero>main {
     font-size: 0.95rem;
     color: white;
     transition: color 0.3s ease;
+    text-transform: uppercase;
 }
 
 .main-nav a:hover {
