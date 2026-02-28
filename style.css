@@ -120,6 +120,7 @@ ul {
     /* font-weight: 600; */
     display: block;
     margin-bottom: var(--spacing-xs);
+    font-family: var(--font-heading);
 }
 
 /* Buttons */
