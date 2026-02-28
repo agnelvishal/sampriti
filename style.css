@@ -1108,7 +1108,7 @@ body.no-hero>main {
     align-items: center;
     text-align: center;
     /* padding: var(--spacing-md); */
-    background-color: white;
+    /* background-color: white; */
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
@@ -1116,7 +1116,7 @@ body.no-hero>main {
 }
 
 .product-grid-item:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
     /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
 }
 
