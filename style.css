@@ -57,12 +57,21 @@ h6 {
     margin-bottom: var(--spacing-sm);
 }
 
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
 h2 {
     font-size: 2.5rem;
 }
 
 h3 {
     font-size: 1.75rem;
+    font-family: var(--font-body);
+
 }
 
 p {
@@ -105,11 +114,10 @@ ul {
 }
 
 .eyebrow {
-    text-transform: uppercase;
     font-size: 1.875rem;
     letter-spacing: 2px;
     color: var(--primary-color-1);
-    font-weight: 600;
+    /* font-weight: 600; */
     display: block;
     margin-bottom: var(--spacing-xs);
 }
@@ -1134,7 +1142,6 @@ body.no-hero>main {
 .product-grid-item h3 {
     font-size: 1.25rem;
     margin-bottom: 5px;
-    font-family: var(--font-heading);
     /* Ensure heading font is used */
     color: var(--primary-color-2);
 }
