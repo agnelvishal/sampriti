@@ -94,6 +94,10 @@ p {
     font-size: 1.3rem;
 }
 
+.sub-heading {
+    font-weight: 450;
+}
+
 a {
     text-decoration: none;
     color: inherit;
