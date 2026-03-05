@@ -81,7 +81,7 @@ p {
 .section-divider {
     border: 0;
     border-top: 1px solid #b7b7b7;
-    margin: 0px 0 20px 0;
+    margin: 15px 0 20px 0;
     /* width: 60px; */
     opacity: 1;
 }
