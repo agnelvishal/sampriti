@@ -86,6 +86,10 @@ p {
     opacity: 1;
 }
 
+.how-to-use-section p {
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
