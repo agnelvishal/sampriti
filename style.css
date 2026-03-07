@@ -1129,10 +1129,6 @@ body.no-hero>main {
     color: inherit;
 }
 
-.product-grid-item:hover {
-    /* transform: translateY(-5px); */
-    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
-}
 
 .product-grid-image {
     width: 100%;
