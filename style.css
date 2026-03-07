@@ -147,7 +147,6 @@ ul {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    border-radius: 4px;
     font-family: var(--font-heading);
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -318,7 +317,6 @@ body.no-hero>main {
     justify-content: center;
     width: 42px;
     height: 42px;
-    border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.6);
     background-color: rgba(0, 0, 0, 0.35);
     color: white;
@@ -490,7 +488,6 @@ body.no-hero>main {
     text-align: center;
     padding: var(--spacing-md);
     background-color: white;
-    border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease;
 }
@@ -787,7 +784,6 @@ body.no-hero>main {
     background-color: #fff;
     margin: 5% auto;
     padding: 30px;
-    border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
     max-width: 500px;
@@ -843,7 +839,6 @@ body.no-hero>main {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 4px;
     font-family: var(--font-body);
     font-size: 1rem;
     transition: border-color 0.3s;
@@ -980,7 +975,6 @@ body.no-hero>main {
     /* Muted gold/brown tone from reference */
     color: white;
     border: none;
-    border-radius: 30px;
     /* Pill shape */
     padding: 12px 35px;
     font-size: 0.85rem;
@@ -1058,7 +1052,6 @@ body.no-hero>main {
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
     background-color: #f4f4f4;
     color: var(--text-color);
     transition: all 0.3s ease;
@@ -1099,7 +1092,6 @@ body.no-hero>main {
     .map-container {
         margin-top: var(--spacing-sm);
         margin-bottom: var(--spacing-md);
-        border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -1277,7 +1269,6 @@ body.no-hero>main {
 
 .blog-card {
     background-color: white;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1523,7 +1514,6 @@ body.no-hero>main {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 1rem;
-    border-radius: 4px;
 }
 
 .subscribe-form input:focus {
