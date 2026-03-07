@@ -493,7 +493,6 @@ body.no-hero>main {
 
 .standard-item {
     text-align: center;
-    padding: var(--spacing-md);
     transition: transform 0.3s ease;
 }
 
