@@ -689,7 +689,7 @@ body.no-hero>main {
 
 /* Footer */
 .main-footer {
-    background-color: var(--primary-color-1);
+    background-color: #252525;
     color: white;
     padding: var(--spacing-lg) 0 var(--spacing-md);
     margin-top: 100px;
