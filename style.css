@@ -348,7 +348,7 @@ body.no-hero>main {
 }
 
 #hero a.btn.btn-primary:hover {
-    background-color: var(--primary-color-1);
+    background-color: var(--primary-color-2);
     ;
 }
 
