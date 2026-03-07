@@ -201,7 +201,7 @@ ul {
 }
 
 .main-header.scrolled {
-    background-color: #FAF9F6;
+    background-color: var(--bg-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -423,7 +423,7 @@ body.no-hero>main {
     width: 43%;
     display: flex;
     align-items: center;
-    background-color: #FAF9F6;
+    background-color: var(--bg-color);
     /* Soft organic background color */
 }
 
