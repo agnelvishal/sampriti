@@ -484,11 +484,16 @@ body.no-hero>main {
     margin-top: var(--spacing-lg);
 }
 
+@media (min-width: 769px) {
+    .standards-grid {
+        grid-template-columns: repeat(8, 1fr);
+        gap: var(--spacing-sm);
+    }
+}
+
 .standard-item {
     text-align: center;
     padding: var(--spacing-md);
-    background-color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease;
 }
 
