@@ -1542,3 +1542,32 @@ body.no-hero>main {
         padding: var(--spacing-lg) var(--spacing-md);
     }
 }
+
+/* Shakti Peya hover image swap */
+.product-grid-image {
+    position: relative;
+}
+
+.product-grid-image .img-default,
+.product-grid-image .img-hover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.product-grid-image .img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.product-grid-image:hover .img-default {
+    opacity: 0;
+}
+
+.product-grid-image:hover .img-hover {
+    opacity: 1;
+}
