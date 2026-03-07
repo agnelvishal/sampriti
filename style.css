@@ -353,11 +353,12 @@ body.no-hero>main {
 }
 
 .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     max-width: 900px;
     /* margin: 0 auto var(--spacing-md); */
     /* color: var(--primary-color-2); */
     color: #fff;
+    font-weight: 300;
 }
 
 .hero-title-small {
