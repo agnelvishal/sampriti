@@ -16,7 +16,7 @@ async function convertImages() {
     console.log(`Processing ${file}...`);
     
     try {
-      let pipeline = sharp(file);
+      let pipeline = sharp(file, { failOnError: false });
       const metadata = await pipeline.metadata();
       
       if (metadata.width > MAX_WIDTH) {
