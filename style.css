@@ -994,7 +994,7 @@ body.no-hero>main {
 .blog-hero-section {
     position: relative;
     height: 70vh;
-    background-image: url('assets/images/blog/cardamon.jpg');
+    background-image: url('assets/images/blog/cardamon.avif');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1005,7 +1005,7 @@ body.no-hero>main {
 
 
 #shop-hero {
-    background-image: url('assets/images/cinnamon.jpg');
+    background-image: url('assets/images/cinnamon.avif');
 }
 
 .contact-submit-btn:hover {

@@ -27,11 +27,11 @@ create a static website for Sampriti.
 
 Info on Sampriti is in sampriti.md
 
-Transparent logo is logo-trans.png
+Transparent logo is logo-trans.avif
 
-Logo with brown background is logo.png
+Logo with brown background is logo.avif
 
-Photo of product 1 Shakti Peya  is shakthi.png
+Photo of product 1 Shakti Peya  is shakthi.avif
 Photo of product 2 CHANDRA RASA  is chandra.avif
 
 
