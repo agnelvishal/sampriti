@@ -1,6 +1,9 @@
-
+# test and deploy
+You can now run npm run dev to see the site locally or npm run build to see the production version in dist/.
 
  
+
+ # design 
  Inspiration from https://animamundiherbals.com/
 
 
