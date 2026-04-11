@@ -2665,7 +2665,8 @@
 
       .products-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: center;
         gap: 32px 24px;
         margin-top: var(--spacing-md);
       }
@@ -4828,8 +4829,12 @@
         }
 
         /* Scale down massive text */
-        h1:not(#house-view h1):not(#provenance-view h1), .hero-section h1, .editorial-hero h1, .house-hero h1 {
-          font-size: clamp(2rem, 8vw, 3.5rem) !important;
+        h1:not(#house-view h1):not(#provenance-view h1), .hero-section h1, .editorial-hero h1, .house-hero h1, #hero h1 {
+          font-family: var(--font-heading) !important;
+          font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+          letter-spacing: 0.1em !important;
+          text-transform: uppercase !important;
+          font-weight: 400 !important;
           line-height: 1.1 !important;
         }
 
@@ -4957,10 +4962,17 @@
         }
       }
 
-      /* Make Shakti Peya and Chandra Rasa images wider */
+      /* Prevent Shakti Peya and Chandra Rasa images from being chopped */
+      .product-grid-item[onclick*="shakti"] .product-grid-image img,
+      .product-grid-item[onclick*="chandra"] .product-grid-image img {
+        aspect-ratio: auto !important;
+        object-fit: contain !important;
+        max-height: 400px;
+      }
       .product-grid-item[onclick*="shakti"] .product-grid-image,
       .product-grid-item[onclick*="chandra"] .product-grid-image {
-        aspect-ratio: 1.5 / 1 !important;
+        aspect-ratio: auto !important;
+        height: auto !important;
       }
     </style>
   </head>
@@ -5226,6 +5238,12 @@
                       alt="Shakti Peya - Energy Elixir"
                       referrerPolicy="no-referrer"
                     />
+                    <img
+                      class="img-hover"
+                      src="assets/images/shakthi-hover.avif"
+                      alt="Shakti Peya Hover"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                   <h3 style="font-weight: 400; text-transform: none;">SHAKTI PEYA | Energy Elixir</h3>
                   <p class="product-grid-description">
@@ -5257,6 +5275,12 @@
                       alt="Chandra Rasa - Sleep Potion"
                       referrerPolicy="no-referrer"
                     />
+                    <img
+                      class="img-hover"
+                      src="assets/images/chandrai-hover.avif"
+                      alt="Chandra Rasa Hover"
+                      referrerPolicy="no-referrer"
+                    />
                   </div>
                   <h3 style="font-weight: 400; text-transform: none;">CHANDRA RASA | Sleep Potion</h3>
                   <p class="product-grid-description">
@@ -5273,22 +5297,7 @@
                   </button>
                 </div>
 
-                <!-- Product 3: Black Turmeric -->
-                <div class="product-grid-item" onclick="showProduct('turmeric')" style="max-width: 300px; margin: 0 auto; height: auto !important;">
-                  <p class="product-grid-subtitle" style="margin-bottom: 5px;">Curcumin caseia</p>
-                  <p class="product-grid-description" style="margin-bottom: 15px;">
-                    A rare kayakalpa herb...
-                  </p>
-                  <div class="product-grid-image">
-                    <img class="img-default" src="assets/images/black-turmeric-new.avif" alt="Curcuma Caesia" referrerpolicy="no-referrer">
-                    <img class="img-hover" src="assets/images/black-turmeric-hover-new.avif" alt="Curcuma Caesia Hover" referrerpolicy="no-referrer">
-                  </div>
-                  <h3 style="margin-top: 15px;">BLACK TURMERIC</h3>
-                  <p class="product-grid-price">$42</p>
-                  <button class="btn btn-primary buy-now-btn" data-product="Black Turmeric" onclick="event.stopPropagation()">
-                    Add to cart
-                  </button>
-                </div>
+
             </div>
           </div>
         </section>
@@ -5298,16 +5307,21 @@
           <div class="prov-media-img">
             <img src="assets/images/black-turmeric-side.avif" alt="Black Turmeric Side Display" referrerpolicy="no-referrer">
           </div>
-          <div class="prov-media-text" style="background: #fbfaf8;">
-            <span class="eyebrow" style="font-size: 0.75rem; color: #888;">BLACK TURMERIC</span>
-            <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 300; margin-bottom: 30px;">The Shadow Catalyst</h2>
-            <p style="font-size: 1rem; line-height: 1.8; color: #444; margin-bottom: 40px;">Deep within the forest floor, the rarest of the Curcuma family carries a striking bluish-black rhizome. Our Black Turmeric side display honors the intensity of this botanical treasure—the ultimate kayakalpa agent for recovery and systemic vitality.</p>
-            <div style="display: flex; align-items: center; gap: 40px;">
-              <div style="text-align: left;">
-                <span style="display: block; font-family: var(--font-heading); font-size: 1.25rem;">$48</span>
-                <span style="font-size: 0.7rem; text-transform: uppercase; color: #888;">Curcumin Caesia</span>
+          <div class="prov-media-text" style="background: #fbfaf8; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 60px;">
+            <div class="product-grid-item" onclick="showProduct('turmeric')" style="max-width: 400px; width: 100%; margin: 0; background: transparent; padding: 0; text-align: left;">
+              <span class="eyebrow" style="font-size: 0.75rem; color: #888; margin-bottom: 5px; display: block;">CURCUMA CAESIA</span>
+              <h2 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 300; margin-bottom: 20px; line-height: 1.1;">BLACK TURMERIC</h2>
+              <div class="product-grid-image" style="margin-bottom: 30px; aspect-ratio: 1/1;">
+                <img class="img-default" src="assets/images/black-turmeric-new.avif" alt="Curcuma Caesia" referrerpolicy="no-referrer">
+                <img class="img-hover" src="assets/images/black-turmeric-hover-new.avif" alt="Curcuma Caesia Hover" referrerpolicy="no-referrer">
               </div>
-              <button class="btn btn-primary" onclick="showProduct('turmeric')" style="padding: 15px 40px;">Discover the herb</button>
+              <p style="font-size: 1rem; line-height: 1.6; color: #666; margin-bottom: 25px;">A rare Kaya Kalpa agent for profound recovery and cellular longevity. This bluish-black rhizome is revered in traditional medicine for its exceptional anti-inflammatory properties.</p>
+              <div style="display: flex; align-items: center; gap: 30px;">
+                <span style="font-family: var(--font-heading); font-size: 1.5rem; color: #333;">$42</span>
+                <button class="btn btn-primary buy-now-btn" data-product="Black Turmeric" onclick="event.stopPropagation()" style="padding: 12px 30px;">
+                  Add to cart
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -6075,13 +6089,16 @@
             <div style="position: relative; z-index: 2; padding: 0 20px">
               <h1
                 style="
-                  font-size: clamp(2rem, 8vw, 3.5rem);
                   font-family: var(--font-heading);
+                  font-size: clamp(1.5rem, 5vw, 2.5rem);
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  font-weight: 400;
                   margin-bottom: 15px;
                   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
                 "
               >
-                The House
+                THE HOUSE
               </h1>
               <p
                 style="
