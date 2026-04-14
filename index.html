@@ -5515,7 +5515,7 @@
             <a href="#provenance" onclick="
                   showProvenance();
                   return false;
-                ">PROVENANCE</a>
+                ">Provenance</a>
           </li>
         </ul>
       </nav>
@@ -5579,7 +5579,7 @@
                   color: #333;
                   margin-top: 10px;
                 ">
-              SIGNATURE RITUALS
+              Signature Rituals
             </h2>
             <p style="
                   color: #666;
@@ -5735,10 +5735,10 @@
                   font-family: var(--font-heading);
                   color: #333;
                   margin-top: 10px;
-                  text-transform: uppercase;
+                  text-transform: none;
                   letter-spacing: 0.1em;
                 ">
-              MATERIA BOTANICA
+              Materia Botanica
             </h2>
             <p style="
                   color: #666;
@@ -5849,7 +5849,7 @@
                   font-family: var(--font-heading);
                   font-size: clamp(2.5rem, 8vw, 4rem);
                   margin-bottom: 15px;
-                  text-transform: uppercase;
+                  text-transform: none;
                   letter-spacing: 0.1em;
                   color: #222;
                   font-weight: 400;
@@ -6669,7 +6669,7 @@
           referrerpolicy="no-referrer" />
         <div class="container" style="position: relative; top: auto; transform: none; z-index: 2">
           <h1 class="hero-title"
-            style="color: #333; text-shadow: none; text-transform: uppercase; letter-spacing: 0.1em;">MATERIA BOTANICA
+            style="color: #333; text-shadow: none; text-transform: none; letter-spacing: 0.1em;">Materia Botanica
           </h1>
           <p class="hero-description" style="color: #555; text-shadow: none; max-width: 800px;">
             A collection of high-functioning botanical infusions, each
@@ -6688,10 +6688,10 @@
                   font-family: var(--font-heading);
                   color: #333;
                   margin-top: 10px;
-                  text-transform: uppercase;
+                  text-transform: none;
                   letter-spacing: 0.1em;
                 ">
-              MATERIA BOTANICA
+              Materia Botanica
             </h2>
             <p style="
                   color: #666;
@@ -6808,7 +6808,7 @@
         <div class="container" style="position: relative; top: auto; transform: none; z-index: 2">
           <h2
             style="font-size: 2.5rem; font-family: var(--font-heading); color: #fff; margin-top: 10px; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);">
-            SIGNATURE RITUALS</h2>
+            Signature Rituals</h2>
           <p
             style="color: #fff; font-size: 1rem; max-width: 900px; margin: 0 auto 30px; text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);">
             A collection of precisely composed formulations honoring the body’s essential cycles: activation and
@@ -6827,7 +6827,7 @@
                   color: #333;
                   margin-top: 10px;
                 ">
-              SIGNATURE RITUALS
+              Signature Rituals
             </h2>
             <p style="color: #666; font-size: 1rem; max-width: 900px; margin: 0 auto 30px;">
               A collection of precisely composed formulations honoring the body’s essential cycles: activation and
@@ -6840,12 +6840,16 @@
             <div class="product-grid-item" onclick="showProduct('shakti')" role="button" tabindex="0"
               style="cursor: pointer;">
               <div class="product-grid-image">
-                <img src="assets/images/shakti-peya-new.avif" alt="Shakti Peya - Energy Elixir" />
+                <img class="img-default" src="assets/images/shakti-peya-new.avif" alt="Shakti Peya - Energy Elixir"
+                  referrerPolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/shakti-peya-hover.avif" alt="Shakti Peya Hover"
+                  referrerPolicy="no-referrer" />
               </div>
               <h3 style="font-weight: 400; text-transform: none;">SHAKTI PEYA | Energy Elixir</h3>
               <p class="product-grid-description">
                 Activation ⋅ Anti-Aging ⋅ Radiance
               </p>
+              <p class="product-grid-kit">9 Test Tube Kit</p>
               <p class="product-grid-price">$54</p>
               <button class="btn btn-primary buy-now-btn" data-product="SHAKTI PEYA" onclick="event.stopPropagation()">
                 Add to cart
@@ -6856,12 +6860,16 @@
             <div class="product-grid-item" onclick="showProduct('chandra')" role="button" tabindex="0"
               style="cursor: pointer;">
               <div class="product-grid-image">
-                <img src="assets/images/chandra-rasa-new.avif" alt="Chandra Rasa - Sleep Potion" />
+                <img class="img-default" src="assets/images/chandra-rasa-new.avif" alt="Chandra Rasa - Sleep Potion"
+                  referrerPolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/chandra-rasa-hover.avif" alt="Chandra Rasa Hover"
+                  referrerPolicy="no-referrer" />
               </div>
               <h3 style="font-weight: 400; text-transform: none;">CHANDRA RASA | Sleep Potion</h3>
               <p class="product-grid-description">
                 Calm ⋅ Settling ⋅ Restorative
               </p>
+              <p class="product-grid-kit">9 Test Tube Kit</p>
               <p class="product-grid-price">$54</p>
               <button class="btn btn-primary buy-now-btn" data-product="CHANDRA RASA" onclick="event.stopPropagation()">
                 Add to cart
@@ -6881,10 +6889,10 @@
                   font-family: var(--font-heading);
                   color: #333;
                   margin-top: 10px;
-                  text-transform: uppercase;
+                  text-transform: none;
                   letter-spacing: 0.1em;
                 ">
-              MATERIA BOTANICA
+              Materia Botanica
             </h2>
           </div>
 
@@ -6892,7 +6900,9 @@
             <!-- Product 1: Hibiscus -->
             <div class="product-grid-item" onclick="showProduct('hibiscus')">
               <div class="product-grid-image">
-                <img src="assets/images/hibiscus-new-2.avif" alt="Hibiscus Rosa-Sinensis"
+                <img class="img-default" src="assets/images/hibiscus-new-2.avif" alt="Hibiscus Rosa-Sinensis"
+                  referrerpolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/hibiscus-hover.avif" alt="Hibiscus Hover"
                   referrerpolicy="no-referrer" />
               </div>
               <h3>HIBISCUS</h3>
@@ -6910,7 +6920,10 @@
             <!-- Product 2: Rose -->
             <div class="product-grid-item" onclick="showProduct('rose')">
               <div class="product-grid-image">
-                <img src="assets/images/rose-new-2.avif" alt="Rosa Damascena" referrerpolicy="no-referrer" />
+                <img class="img-default" src="assets/images/rose-new-2.avif" alt="Rosa Damascena"
+                  referrerpolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/rose-hover.avif" alt="Rose Hover"
+                  referrerpolicy="no-referrer" />
               </div>
               <h3>ROSE</h3>
               <p class="product-grid-subtitle">Rosa Damascena</p>
@@ -6927,8 +6940,10 @@
             <!-- Product 3: Blue Butterfly Pea -->
             <div class="product-grid-item" onclick="showProduct('butterflypea')">
               <div class="product-grid-image">
-                <img src="assets/images/blue-butterfly-pea-new.avif" alt="Clitoria Ternatea"
+                <img class="img-default" src="assets/images/blue-butterfly-pea-new.avif" alt="Clitoria Ternatea"
                   referrerpolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/blue-butterfly-pea-hover.avif"
+                  alt="Blue Butterfly Pea Hover" referrerpolicy="no-referrer" />
               </div>
               <h3>BLUE BUTTERFLY PEA</h3>
               <p class="product-grid-subtitle">Clitoria Ternatea</p>
@@ -6946,7 +6961,10 @@
             <!-- Product 4: Black Turmeric -->
             <div class="product-grid-item" onclick="showProduct('turmeric')">
               <div class="product-grid-image">
-                <img src="assets/images/black-turmeric-new.avif" alt="Curcuma Caesia" referrerpolicy="no-referrer" />
+                <img class="img-default" src="assets/images/black-turmeric-new.avif" alt="Curcuma Caesia"
+                  referrerpolicy="no-referrer" />
+                <img class="img-hover" src="assets/images/black-turmeric-hover.avif" alt="Black Turmeric Hover"
+                  referrerpolicy="no-referrer" />
               </div>
               <h3>BLACK TURMERIC</h3>
               <p class="product-grid-subtitle">Curcuma Caesia</p>
@@ -7893,7 +7911,7 @@
                 z-index: 1;
               "></div>
         <div style="position: relative; z-index: 2; padding: 0 20px">
-          <h1 class="hero-title" style="color: #fff;">PROVENANCE</h1>
+          <h1 class="hero-title" style="color: #fff;">Provenance</h1>
           <p style="
                   font-family: var(--font-body);
                   font-size: 1.05rem;
@@ -7926,7 +7944,7 @@
           <img src="assets/images/provenance-sage.avif" alt="The Sacred Peaks" referrerpolicy="no-referrer">
         </div>
         <div class="prov-media-text">
-          <span class="eyebrow">> THE SACRED PEAKS</span>
+          <span class="eyebrow">> The Sacred Peaks</span>
           <h2>The Chapter of Sages</h2>
           <p>Where Siddha sages once meditated on the subtle intelligence of plants. Here, we source herbs that carry
             the vibration of ancient silence.</p>
@@ -7947,7 +7965,7 @@
               referrerpolicy="no-referrer">
             <span class="eyebrow" style="font-size: 0.65rem; margin-bottom: 8px;">I. The Palani Altitude:
               Hibiscus</span>
-            <h3>THE HIGH-ALTITUDE BLOOM</h3>
+            <h3>The High-Altitude Bloom</h3>
             <p><strong>Terrain:</strong> The Palani Massif. 2,000 meters.<br><br>Our Hibiscus is defined by the thin air
               and intense solar radiation of the Western Ghats. Harvested from the same contours where Siddha lineages
               first codified the science of rejuvenation. This is a botanical of rare clarity—refined by altitude and
@@ -7958,7 +7976,7 @@
           <a href="#" class="prov-carousel-card">
             <img src="assets/images/blog/cardamon.avif" alt="Cardamom from Kolli Hills" referrerpolicy="no-referrer">
             <span class="eyebrow" style="font-size: 0.65rem; margin-bottom: 8px;">II. The Eastern Ghats: Cardamom</span>
-            <h3>THE KOLLI ANOMALY</h3>
+            <h3>The Kolli Anomaly</h3>
             <p><strong>Terrain:</strong> The Kolli Hills. The Mountain of Seventy Forests.<br><br>Sourced from the
               mist-shrouded 'Mountain of Death' in the Eastern Ghats—a landscape of ancient biodiversity and vertical
               forests. Our Cardamom carries a singular aromatic profile, nurtured by a micro-climate that has remained
@@ -7970,7 +7988,7 @@
             <img src="assets/images/provenance-aravalli.avif" alt="Rose from Aravalli Range"
               referrerpolicy="no-referrer">
             <span class="eyebrow" style="font-size: 0.65rem; margin-bottom: 8px;">III. The Arid Contours: Rose</span>
-            <h3>THE ARAVALLI BLOOM</h3>
+            <h3>The Aravalli Bloom</h3>
             <p><strong>Terrain:</strong> The Arid Contours. Rajasthan.<br><br>Sourced from the ancient, mineral-rich
               foothills of the Aravalli Range - the ancient granite barrier that guards the edge of the Thar Desert. Our
               Rose is defined by an atmospheric anomaly: the intense, desiccating heat of the desert meeting the hidden
@@ -7982,7 +8000,7 @@
             <img src="assets/images/provenance-biodynamic.avif" alt="Coastal Plains" referrerpolicy="no-referrer">
             <span class="eyebrow" style="font-size: 0.65rem; margin-bottom: 8px;">IV. The Southern Integrity: Coastal
               Plains</span>
-            <h3>THE BIODYNAMIC CORE</h3>
+            <h3>The Biodynamic Core</h3>
             <p><strong>Terrain:</strong> Coastal plains. Regenerative soil.<br><br>Our Southern partners operate on a
               timeline of seasons, not markets. No synthetics. No interference. Only the raw integrity of the plant.</p>
             <span class="prov-cta">Discover</span>
@@ -7997,7 +8015,7 @@
         </div>
         <div class="prov-media-text">
           <span class="eyebrow">V. The Vessel</span>
-          <h2>THE CONSCIOUS ARTIFACT</h2>
+          <h2>The Conscious Artifact</h2>
           <p>Protection, not just packaging. A precise calibration of light and material designed for botanical
             longevity.</p>
           <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.85; color: #666;">
