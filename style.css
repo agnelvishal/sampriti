@@ -253,7 +253,7 @@ body.no-hero>main {
     font-size: 0.95rem;
     color: white;
     transition: color 0.3s ease;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .main-nav a:hover {
@@ -682,7 +682,7 @@ body.no-hero>main {
     font-family: var(--font-heading);
     font-size: 2rem;
     letter-spacing: 4px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 
@@ -984,7 +984,7 @@ body.no-hero>main {
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    text-transform: none;
     margin-top: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1306,7 +1306,7 @@ body.no-hero>main {
 
 .blog-category {
     font-size: 0.8rem;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 1px;
     color: var(--primary-color-1);
     display: block;
