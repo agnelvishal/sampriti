@@ -2,8 +2,30 @@
   command = "npm run build"
   publish = "dist"
 
-# Asset optimization is enabled by default in Netlify dashboard,
-# but using a build tool provides better control and local parity.
+[functions]
+  directory = "netlify/functions"
+  # Include the assets folder so functions can read image files at runtime
+  included_files = ["assets/images/**"]
+
+# Environment variables — IMPORTANT: replace the secret value below with a strong random string,
+# or (better) set IMG_SECRET in the Netlify dashboard under Site Settings > Environment Variables
+# and remove it from this file so it is not committed to git.
+[build.environment]
+  IMG_SECRET = "darTY4RT6Ye4354PO43ILER2SRSFS536re"
+
+# Block direct access to assets/images — must go through the function
+[[redirects]]
+  from = "/assets/images/*"
+  to = "/404"
+  status = 404
+  force = true
+
+# Allow the Netlify functions to be called normally
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
