@@ -1,3 +1,20 @@
+The website is currently hosted in free netlify static hosting.
+
+I want to make wget of this website difficult.
+
+Using vite and minification already.
+
+Can netlify functions be used to serve images with js and expiry so that cloning website with wget becomes difficult?
+
+I do not expect more than 100 visitors per day.
+
+I do not mind website being very slow. 
+
+Which approach is good?
+
+You will be able to do this in current repo with files like netlify.toml etc without needing netlify login in browser?
+
+##
 Read html, css and js code.
 
 Read index.html, style.css and script.js code.
