@@ -5,7 +5,9 @@
 [functions]
   directory = "netlify/functions"
   # Include the assets folder so functions can read image files at runtime
-  included_files = ["assets/images/**"]
+  # assets/images/** = original source images (referenced by data-pimg with assets/images/ prefix)
+  # assets/*.avif etc = hashed Vite build output images (referenced by data-pimg with assets/ prefix)
+  included_files = ["assets/images/**", "assets/*.avif", "assets/*.webp", "assets/*.jpg", "assets/*.jpeg", "assets/*.png", "assets/*.gif"]
 
 # Environment variables — IMPORTANT: replace the secret value below with a strong random string,
 # or (better) set IMG_SECRET in the Netlify dashboard under Site Settings > Environment Variables
@@ -20,11 +22,36 @@
   status = 404
   force = true
 
-# Allow the Netlify functions to be called normally
+# Block direct access to hashed image files in /assets/ (Vite build output)
 [[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+  from = "/assets/*.avif"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/assets/*.webp"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/assets/*.jpg"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/assets/*.jpeg"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/assets/*.png"
+  to = "/404"
+  status = 404
+  force = true
 
 [[headers]]
   for = "/*"

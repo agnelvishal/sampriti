@@ -2,9 +2,10 @@
   "name": "sampriti",
   "version": "1.0.0",
   "description": "Botanicals & Herbal Wellness website",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node post-build-protect.js",
     "preview": "vite preview"
   },
   "devDependencies": {

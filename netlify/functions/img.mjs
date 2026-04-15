@@ -31,6 +31,8 @@ export const handler = async (event) => {
 
   // Sanitize path — prevent traversal
   const normalized = filePath.replace(/\\/g, "/").replace(/\.\.+/g, "");
+
+  // Allow paths under assets/ (both assets/images/ and assets/ for hashed Vite output)
   if (!normalized.startsWith("assets/")) {
     return { statusCode: 403, body: "Forbidden" };
   }
@@ -53,7 +55,9 @@ export const handler = async (event) => {
   }
 
   // Resolve file path — in Netlify Functions, the site root is available at process.cwd()
-  // The assets are included via netlify.toml included_files
+  // assets/images/** are included via netlify.toml included_files
+  // assets/*.avif (hashed Vite output) are in the publish dir (dist/assets/) which is
+  // also available at process.cwd() in the function runtime
   const absPath = join(process.cwd(), normalized);
 
   if (!existsSync(absPath)) {

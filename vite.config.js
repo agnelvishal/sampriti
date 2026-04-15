@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { globSync } from 'glob';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
-import { protectImagesPlugin } from './vite-plugin-protect-images.js';
 
 // Find all HTML files in the project, excluding node_modules and dist
 const htmlFiles = globSync(['**/*.html'], { 
@@ -20,12 +19,11 @@ export default defineConfig({
   root: './',
   plugins: [
     ViteMinifyPlugin({}),
-    // Rewrites img src="assets/images/..." → data-pimg="..." in built HTML
-    protectImagesPlugin(),
   ],
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    manifest: true,
     rollupOptions: {
       input,
     },
