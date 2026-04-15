@@ -75,6 +75,14 @@
         el.src = url;
         // Once loaded, remove the data attribute to avoid re-processing
         el.addEventListener("load", () => delete el.dataset.pimg, { once: true });
+      } else if (
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1"
+      ) {
+        // Fallback for local development if Netlify functions are not available
+        // (e.g. running 'npm run dev' instead of 'netlify dev')
+        el.src = imgPath;
+        delete el.dataset.pimg;
       }
     }
 
@@ -82,6 +90,12 @@
       const url = await buildImageUrl(srcsetPath);
       if (url) {
         el.srcset = url;
+        delete el.dataset.psrcset;
+      } else if (
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1"
+      ) {
+        el.srcset = srcsetPath;
         delete el.dataset.psrcset;
       }
     }
@@ -95,6 +109,17 @@
           el.style.backgroundImage = current.replace("url()", `url(${url})`);
         } else {
           el.style.backgroundImage = `url(${url})`;
+        }
+        delete el.dataset.pbg;
+      } else if (
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1"
+      ) {
+        const current = el.style.backgroundImage || "";
+        if (current.includes("url()")) {
+          el.style.backgroundImage = current.replace("url()", `url(${bgPath})`);
+        } else {
+          el.style.backgroundImage = `url(${bgPath})`;
         }
         delete el.dataset.pbg;
       }
@@ -151,4 +176,7 @@
   } else {
     initProtectedImages();
   }
+
+  // Expose to window for manual re-initialization (useful for dynamic content)
+  window.initProtectedImages = initProtectedImages;
 })();

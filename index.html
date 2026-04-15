@@ -9643,12 +9643,13 @@
             <div style="text-align: center; margin-bottom: 40px;">
                 <span style="font-size: 0.8rem; text-transform: none; letter-spacing: 0.1em; color: var(--text-light);">${article.category}</span>
                 <h1 style="margin: 15px 0 30px 0; font-size: 2.5rem;">${article.title}</h1>
-                <img src="${article.image}" alt="${article.title}" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 0;">
+                <img data-pimg="${article.image}" src="" alt="${article.title}" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 0;">
             </div>
             <div class="article-body" style="font-size: 1.1rem; line-height: 1.8; color: var(--text-color);">
                 ${article.content}
             </div>
         `;
+        if (window.initProtectedImages) window.initProtectedImages();
 
         document.getElementById("home-view").style.display = "none";
         document.getElementById("shop-view").style.display = "none";
@@ -9832,7 +9833,7 @@
             checkoutItems.innerHTML += `
                     <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
                         <div style="display: flex; align-items: center; gap: 15px;">
-                            <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 0; border: 1px solid #eee;">
+                            <img data-pimg="${item.image}" src="" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 0; border: 1px solid #eee;">
                             <div>
                                 <div style="font-size: 0.9rem; color: #333;">${item.name}</div>
                                 <div style="font-size: 0.8rem; color: #666;">Qty: ${item.quantity}</div>
@@ -9844,6 +9845,8 @@
           });
           updateCheckoutTotals();
         }
+
+        if (window.initProtectedImages) window.initProtectedImages();
 
         showCheckout();
       };
@@ -9904,7 +9907,7 @@
               hasCrossSell = true;
               cartCrossSellContainer.innerHTML += `
                         <div style="min-width: 120px; text-align: left; cursor: pointer;" onclick="closeCartModal(); showProduct('${crossProduct.id}')">
-                            <img src="${crossProduct.image}" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 10px; background: #f9f9f9;">
+                            <img data-pimg="${crossProduct.image}" src="" style="width: 100%; height: 120px; object-fit: contain; margin-bottom: 10px; background: #f9f9f9;">
                             <div style="font-size: 0.8rem; font-weight: 500; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 2; color: #333;">${crossProduct.name}</div>
                             <div style="font-size: 0.8rem; color: #666; margin-bottom: 8px;">$${crossProduct.price.toFixed(2)}</div>
                             <button onclick="event.stopPropagation(); addToCart('${key}')" style="width: 100%; padding: 8px; background: var(--primary-color-1); color: var(--bg-color); border: none; cursor: pointer; font-size: 0.7rem; text-transform: none;">Add to Cart</button>
@@ -9943,7 +9946,7 @@
               itemEl.style.borderBottom = "1px solid #eae8e0";
 
               itemEl.innerHTML = `
-                        <img src="${item.image}" alt="${item.name}" style="width: 80px; height: 100px; object-fit: contain; background: #f9f9f9;">
+                        <img data-pimg="${item.image}" src="" alt="${item.name}" style="width: 80px; height: 100px; object-fit: contain; background: #f9f9f9;">
                         <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
                             <div style="display: flex; justify-content: space-between; align-items: flex-start;">
                                 <div style="font-family: var(--font-heading); font-size: 0.9rem; color: #333; max-width: 70%; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 2;">${item.name}</div>
@@ -9964,6 +9967,7 @@
             });
           }
         }
+        if (window.initProtectedImages) window.initProtectedImages();
       }
 
       window.removeFromCart = function (index) {
@@ -10002,7 +10006,7 @@
           "added-product-details",
         );
         detailsContainer.innerHTML = `
-            <img src="${product.image}" alt="${product.name}" style="width: 80px; height: 80px; object-fit: contain; background: transparent; padding: 5px;">
+            <img data-pimg="${product.image}" src="" alt="${product.name}" style="width: 80px; height: 80px; object-fit: contain; background: transparent; padding: 5px;">
             <div style="flex: 1;">
                 <h4 style="margin: 0 0 5px 0; font-size: 0.9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 2;">${product.name}</h4>
                 <p style="margin: 0 0 10px 0; color: var(--text-light); font-size: 0.8rem;">$${product.price.toFixed(2)}</p>
@@ -10027,7 +10031,7 @@
             const crossProduct = productsData[key];
             crossSellContainer.innerHTML += `
                     <div style="min-width: 120px; text-align: center; border: 1px solid #eee; padding: 10px; border-radius: 0; cursor: pointer;" onclick="closeAddedModal(); showProduct('${crossProduct.id}')">
-                        <img src="${crossProduct.image}" style="width: 100%; height: 80px; object-fit: contain; margin-bottom: 10px;">
+                        <img data-pimg="${crossProduct.image}" src="" style="width: 100%; height: 80px; object-fit: contain; margin-bottom: 10px;">
                         <div style="font-size: 0.7rem; font-weight: 500; margin-bottom: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 2;">${crossProduct.name}</div>
                         <div style="font-size: 0.75rem; color: var(--text-light);">$${crossProduct.price.toFixed(2)}</div>
                     </div>
@@ -10035,6 +10039,7 @@
           }
         });
 
+        if (window.initProtectedImages) window.initProtectedImages();
         addedModal.style.display = "block";
       }
 
